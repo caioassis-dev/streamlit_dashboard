@@ -16,13 +16,12 @@ month = st.sidebar.selectbox("Ano - Mês", df['Month'].unique())
 
 df_filtered = df[df['Month'] == month]
 
-col1, col2,col3 = st.columns(3)
-col1.title("Análise de Preços de")
-col2.title("Combustíveis")
+
+st.title("Análise de Preços de Combustíveis")
 
 imagem_path = "./kisspng-gasoline-petroleum-fuel-dispenser-filling-station-fuel-5ac010c23b9727.2370270715225366422441.png"
 largura_desejada = 120  # Defina a largura desejada em pixels
-col3.image(imagem_path, use_column_width=False, width=largura_desejada)
+st.image(imagem_path, use_column_width=False, width=largura_desejada)
 
 
 col4, col5 = st.columns(2)
